@@ -1,0 +1,43 @@
+---
+# Here you can select the starting world and positions of the players. Format: X:Y:Z
+player1-position: "0:0:0"
+player2-position: "0:0:0"
+duel-world: "world" # Make sure the world is loaded
+
+# These messages will be sent when a player joins/leaves the duel queue.
+joined-queue: "You have joined the duel queue."
+left-queue: "You have left the duel queue."
+
+# Here you can customize the duel messages.
+duel-against: "Duel has started against - {player}"
+duel-won: "You won the duel!"
+duel-lost: "You lost the duel!"
+broadcast-message: "{winner} has won a duel against {loser}!"
+
+# You can customize the name and enchantments on armor.
+# Look at the example below to see how it's done.
+# Name and enchantments are optional but id must be defined.
+helmet:
+    id: 310
+    name: "Duel Helmet!"
+chestplate:
+    id: 311
+    enchantments:
+        protection: 6
+        unbreaking: 10
+leggings:
+    id: 312
+boots:
+    id: 313
+    
+# You can customize the name, enchantments and count of items.
+# Look at the example below to see how it's done.
+# Name and enchantments are optional but id must be defined. 
+items:
+    276: # Item ID (Diamond Sword)
+        name: "Duel Sword!"
+        enchantments:
+            sharpness: 3
+    322:
+        count: 3
+...

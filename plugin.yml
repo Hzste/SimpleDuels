@@ -1,0 +1,15 @@
+name: SimpleDuels
+main: blood\SimpleDuels
+version: 1.0.0
+api: 4.0.0
+author: BloodFistMCPE
+description: A simple duels plugin that allows players to 1v1!
+
+commands:
+  duel:
+    description: "Join or leave a duel queue!"
+    permission: "duel.command"
+
+permissions:
+  blood.simpleduels:
+    default: true
